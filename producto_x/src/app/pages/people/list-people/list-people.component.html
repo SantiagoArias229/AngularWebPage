@@ -1,0 +1,23 @@
+
+<br>
+<div class="mx-auto" style="width: 90%;">
+    <div class="clientes">
+        <div class="cliente" *ngFor="let cliente of clientes">
+            <!--<div class="image" [ngStyle]="{ backgroundImage: 'url('+place.image+')' }"></div>-->
+            <div class="info">
+                <h2>{{cliente.nombre}}</h2>
+                
+                <span *ngFor="let numero of numeros">
+                    <ng-container *ngIf="numero <= cliente.nivel; else elseBlock">
+                        <span class="fa fa-star checked"></span>
+                      </ng-container>
+                      <ng-template #elseBlock>
+                        <span class="fa fa-star"></span>
+                      </ng-template>
+                  </span>
+                <p>Descripción: {{cliente.descripcion}}</p>
+                <!--<button class="btn btn-outline-danger" (click)="onClickDelete(cliente)">Borrar</button>-->
+            </div>
+        </div>
+    </div>
+</div>

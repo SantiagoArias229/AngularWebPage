@@ -1,0 +1,21 @@
+.cliente {
+    border: 1px solid rgb(24, 4, 239);
+    border-radius: 10px;
+    display: grid;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.cliente .info {
+    padding: 5px 5px;
+}
+
+.cliente .image {
+    background-size: cover;
+    background-position: center;
+}
+
+.checked {
+    color: orange;
+  }

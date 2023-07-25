@@ -1,0 +1,39 @@
+
+<br>
+<div class="mx-auto" style="width: 90%;">
+    Ejemplo Formulario Bootstrap
+    <div class="container">
+      <h2>Formulario de Personas</h2>
+      <form [formGroup]="formulario" (ngSubmit)="onSumit()">
+        <!-- Campo Nombre -->
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Ingresa tu nombre">
+        </div>
+
+        <!-- Campo Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Ingresa tu email">
+        </div>
+
+        <!-- Campo Nivel -->
+        <div class="form-group">
+          <label for="nivel">Nivel:</label>
+          <input type="number" class="form-control" id="nivel" formControlName="nivel" placeholder="Ingresa el nivel (1-5)">
+        </div>
+
+        <!-- Campo Descripción -->
+        <div class="form-group">
+          <label for="descripcion">Descripción:</label>
+          <textarea class="form-control" id="descripcion" formControlName="descripcion" placeholder="Ingresa una descripción"></textarea>
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+      </form>
+    </div>
+    
+</div>
